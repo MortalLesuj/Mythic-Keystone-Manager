@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Font name="SystemFont_Tiny" font="Fonts\FRIZQT__.TTF" virtual="true">
+		<FontHeight>
+			<AbsValue val="10"/>
+		</FontHeight>
+	</Font>
+	
+	<Frame name="ApplicantTemplate" virtual="true">
+		<Size x="250" y="30"/>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentFontString" text="+15 Vault of the Wardens" parentKey="TextString" inherits="GameFontNormal">
+					<TextHeight val="5"/>
+					<Anchors>
+						<Anchor point="LEFT" relativePoint="LEFT"> 
+							<Offset x="5" y="0" />
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parrentInviteButton" text="Invite" parentKey="InviteButton" inherits="UIPanelButtonTemplate">
+				<Size x="60" y="20"/>
+				<Anchors>
+					<Anchor point="RIGHT" relativePoint="RIGHT">
+						<Offset x="-5" y="0"/>
+					</Anchor>
+				</Anchors>
+			</Button>
+		</Frames>
+	</Frame>
